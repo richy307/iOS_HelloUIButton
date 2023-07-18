@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         print("Yo! What's up ??")
     }
     
+    // closure
     let codeButton:UIButton = {
         let newButton = UIButton(type: .system)
         newButton.frame = CGRect(x: 50, y: 50, width: 100, height: 50)
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         return newButton
     }()
     
+    // show button
     func setUpUI(){
         view.addSubview(codeButton)
     }
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setUpUI()
         
         // how to make system style button via code // new UIButton
         let newButton = UIButton(type: .system)
